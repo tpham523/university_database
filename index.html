@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>University Database</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Welcome to University Database</h1>
+  
+
+  <section id="professor-student-use">
+
+    <div class="row">
+
+    <div class="professor-use col-lg-6">
+      <h2>Professor Use</h2>
+
+      <form action="ProfessorInfo.php" method="POST">
+
+        <label>Your SSN:</label>
+        <input class="form-control" maxlength="9" type="text" name="SSN" placeholder="e.g. 123456789" />
+        <input type="submit" class="btn btn-dark btn-sm" />
+        <input type="reset" class="btn btn-dark btn-sm" value="Clear" />
+
+      </form>
+
+        <form action="countGrade.php" method="POST">
+
+          <label>Course Number:</label>
+          <input class="form-control" maxlength="10" type="text" name="courseNo" placeholder="e.g. MATH-115" />
+          <label>Section Number:</label>
+          <input class="form-control" maxlength="6" type="text" name="sectionNo" placeholder="e.g. 789123" />
+          <input class="btn btn-dark btn-sm" type="submit" />
+          <input type="reset" class="btn btn-dark btn-sm" value="Clear" />
+        </form>
+
+      </div>
+
+    <div class="student col-lg-6">
+
+      <h2>Student Use</h2>
+      <form action="courseNum.php" method="POST">
+
+        <label>Course Number:</label>
+        <input class="form-control" maxlength="10" type="text" name="cno" placeholder="e.g. MATH-115" />
+        <input type="submit" class="btn btn-dark btn-sm" />
+        <input type="reset" class="btn btn-dark btn-sm" value="Clear" />
+
+      </form>
+
+      <form action="courseLookUp.php" method="POST">
+
+        <label>Your CWID:</label>
+        <input class="form-control" maxlength="9" type="text" name="scwid" placeholder="e.g. 800123456" />
+        <input type="submit" class="btn btn-dark btn-sm" />
+        <input type="reset" class="btn btn-dark btn-sm" value="Clear" />
+
+      </form>
+    </div>
+  </div>
+  </section>
+</body>
+
+</html>
